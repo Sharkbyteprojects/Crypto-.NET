@@ -82,7 +82,7 @@ namespace Crypto
                             setT("Decrypt");
                             aesAlg.Key = getPW();
                             //aesAlg.IV = IV;
-                            const int mil = 16;
+                            int mil = aesAlg.IV.Length;//16;
                             if ((int)reader.BaseStream.Length <= mil) { MessageBox.Show("OOOOPS! IV Damaged!"); setT(); return; }
                             aesAlg.IV = reader.ReadBytes(mil);
                             // Create an encryptor to perform the stream transform.
