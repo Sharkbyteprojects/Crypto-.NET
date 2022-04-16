@@ -5,6 +5,11 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>icons8-lock-file-64.png.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icons8-lock-file-64.png.ico" />
+  </ItemGroup>
 
 </Project>
